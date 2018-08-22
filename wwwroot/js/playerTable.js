@@ -19,7 +19,7 @@ $(document).ready( function() {
 
 
 // query to populate by position
-$(document).on("click", ".GetByPos", function(){
+$(document).on("change", "#GetByPos", function(){
     console.log("I'm here!");
     var enterData = $(this).val();
     console.log(enterData);
