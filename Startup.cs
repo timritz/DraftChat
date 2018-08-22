@@ -33,7 +33,7 @@ namespace DraftChat
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-
+            services.AddSession();
             services.AddDbContext<DraftChatContext>(options => options.UseMySql(Configuration["DBInfo:ConnectionString"]));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddSignalR();
@@ -51,7 +51,7 @@ namespace DraftChat
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
-
+            app.UseSession();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();

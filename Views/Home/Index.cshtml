@@ -2,34 +2,93 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="container">
-    <div class="row">&nbsp;</div>
-    <div class="row">
-        <div class="col-6">&nbsp;</div>
-        <div class="col-6">
-            User..........<input type="text" id="userInput" />
-            <br />
-            Message...<input type="text" id="messageInput" />
-            <input type="button" id="sendButton" value="Send Message" />
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <hr />
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-6">&nbsp;</div>
-        <div class="col-6">
-            <ul id="messagesList"></ul>
-        </div>
-    </div>
-    <button id="startTimer">Start Timer</button>
-    <p id="demo"></p>
-    <p id ="distance"></p>
-</div>
 <div id="tData">
-    @await Html.PartialAsync("~/Views/Shared/PlayerData.cshtml")
+<partial name="PlayerData"/>
 </div>
+<script>
+    function BindControlEvents(){
+        $(document).on("click", ".GetByTeam", function(){
+            var enterData = $(this).val();
+            console.log("I'm here!");
+            console.log(enterData);
+            $.ajax({
+                type: 'GET',
+                url: '/Ajax/AllOfTeam',
+                cache: false,
+                contentType: 'application/json; charset=utf-8',
+                data: { 'team': enterData },
+            })
+            .done(function(partialViewResult) {
+                $("#tData").html(partialViewResult)
+            });
+        });
+        $(document).on("click", ".GetByPos", function(){
+            var enterData = $(this).val();
+            console.log("I'm here!");
+            console.log(enterData);
+            $.ajax({
+                type: 'GET',
+                url: '/Ajax/AllOfPos',
+                cache: false,
+                contentType: 'application/json; charset=utf-8',
+                data: { 'position': enterData },
+            })
+            .done(function(partialViewResult) {
+                console.log("Here!!!")
+                $("#tData").html(partialViewResult)
+            });
+        });
+        $(document).on("click", ".GetByAvail", function(){
+            var enterData = $(this).val();
+            console.log("I'm here!");
+            console.log(enterData);
+            $.ajax({
+                type: 'GET',
+                url: '/Ajax/AllOfAvail',
+                cache: false,
+                contentType: 'application/json; charset=utf-8',
+                data: { 'avail': enterData },
+            })
+            .done(function(partialViewResult) {
+                $("#tData").html(partialViewResult)
+            });
+        });
+    }
+    $(document).ready(function(){
+        BindControlEvents();
+    });
+    // var prm = Sys.WebForms.PageRequestManager.getInstance(); 
+
+    // prm.add_endRequest(function() { 
+    //     BindControlEvents();
+    // });
+</script>
+<div class="right-container">
+    <div class="timer-wrapper">
+        <span class="round-number round-font">Round: #</span>
+        <br>
+        <span class="round-font">Round Countdown: </span>
+        <span class="round-font" id="demo"></span>
+    </div>
+    <div class="chat-wrapper">
+        <div class="row">
+            <div class="message-box col-6">
+                <ul id="messagesList"></ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <input class="chat-input" type="text" id="userInput" placeholder="UserName"/>
+                <input class="chat-input" type="text" id="messageInput" placeholder="Comment Here"/>
+                <button class="chat-input btn" id="sendButton" value="Send Message">Send Message</button>
+            </div>
+        </div>
+    </div>
+</div>
+<button id="startTimer" type="hidden">Start Timer</button>
+
+<script src="/lib/signalr/signalr.js"></script>
+<script src="~/js/chat.js"></script>
+
 
 

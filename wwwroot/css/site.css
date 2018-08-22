@@ -1,7 +1,5 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
-for details on configuring this project to bundle and minify static web assets. */
-body {
-    padding-top: 50px;
+﻿body {
+    padding-top: 80px;
     padding-bottom: 20px;
 }
 
@@ -34,4 +32,102 @@ body {
     .carousel-caption {
         display: none;
     }
+}
+.navbar-inverse{
+    background-color: #02346C;
+    color: white;
+    border-bottom: 10px solid #D70A0B;
+    height: 70px;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.navbar-inverse .navbar-brand{
+    color: white;
+    font-size: 25px;
+}
+.logo{
+    width: 200px;
+    margin-bottom: 20px;
+}
+a.navbar-brand{
+    vertical-align: top;
+    margin: 0%;
+}
+.thead{
+    position: sticky;
+}
+select{
+    width: 150px;
+}
+.select-btn{
+    margin: 5px;
+    width: 80px;
+    font-size: 16px;
+    padding: 0px;
+}
+.select-wrapper{
+    display: inline-block;
+    margin:10px 15px 15px 0px;
+}
+.select-wrapper label{
+    display: block;
+}
+.table-scroll{
+    width: 800px;
+    height: 315px;
+    overflow: auto;
+    display: inline-block;
+}
+.table-inner{
+    width: 780px;
+}
+.selectPlayer{
+    text-align: center;
+}
+#tData{
+    display: inline-block;
+    vertical-align: top;
+}
+.chat-wrapper{
+    display: inline-block;
+    width: 210px;
+    margin-left: 10px; 
+}
+#sendButton{
+    background: #D70A0B;
+    color: white;
+    margin: 5px 5px; 
+}
+.message-box{
+    border: 1px solid silver;
+    height: 200px;
+    margin: 5px;
+    overflow: auto;
+}
+.chat-input{
+    margin: 5px;
+    width: 230px;
+}
+.timer-wrapper{
+    display: inline-block;
+    width: 230px;
+    background: #02346C;
+    padding: 5px;
+    color: white;
+}
+.right-container{
+    display: inline-block;
+    width: 250px;
+    margin-left: 30px;
+}
+#messagesList{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.round-font{
+    font-size: 18px;
+
 }

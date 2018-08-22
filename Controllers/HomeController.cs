@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 using DraftChat.Models;
 
 namespace DraftChat.Controllers
@@ -18,15 +19,16 @@ namespace DraftChat.Controllers
         }
         public IActionResult Index()
         {
+            HttpContext.Session.SetInt32("CurrentUserId", 69);
             List<Player> ListPlayers = _context.Players.ToList();
             return View(ListPlayers);
         }
 
-        public IActionResult About()
+        public int? About()
         {
             ViewData["Message"] = "Your application description page.";
 
-            return View();
+            return HttpContext.Session.GetInt32("CurrentUserId");
         }
 
         public IActionResult Contact()
