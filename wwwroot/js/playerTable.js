@@ -1,22 +1,22 @@
-
-
-
-    //Query to populate table by team name
-$(document).on("click", ".GetByTeam", function(){
-    var enterData = $(this).val();
-    console.log("I'm here!");
-    console.log(enterData);
-    $.ajax({
-        type: 'GET',
-        url: '/Ajax/AllOfTeam',
-        cache: false,
-        contentType: 'application/json; charset=utf-8',
-        data: { 'team': enterData },
-    })
-    .done(function(partialViewResult) {
-        $("#tData").html(partialViewResult)
+$(document).ready( function() {
+    // console.log("Here here here ")
+//     //Query to populate table by team name
+    $(document).on("change", "#GetByTeam", function(){
+        var enterData = $(this).val();
+        console.log("I'm here!");
+        console.log(enterData);
+        $.ajax({
+            type: 'GET',
+            url: '/Ajax/AllOfTeam',
+            cache: false,
+            contentType: 'application/json; charset=utf-8',
+            data: { 'team': enterData },
+        })
+        .done(function(partialViewResult) {
+            $("#tData").html(partialViewResult)
+        });
     });
-});
+
 
 // query to populate by position
 $(document).on("click", ".GetByPos", function(){
@@ -73,7 +73,7 @@ $('#SortFPoints').click(function(){
 
 });
 $('SortRank').click(function(){
-
+});
 });
 
 

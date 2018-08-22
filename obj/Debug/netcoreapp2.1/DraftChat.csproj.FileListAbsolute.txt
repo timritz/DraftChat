@@ -27,3 +27,36 @@ C:\Users\Dan Woda\Desktop\CodingDojo\CSharp\FinalProject\DraftChat\obj\Debug\net
 C:\Users\Dan Woda\Desktop\CodingDojo\CSharp\FinalProject\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.pdb
 C:\Users\Dan Woda\Desktop\CodingDojo\CSharp\FinalProject\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.csproj.CopyComplete
 C:\Users\Dan Woda\Desktop\CodingDojo\CSharp\FinalProject\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Shared\PlayerData.g.cshtml.cs
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\bin\Debug\netcoreapp2.1\DraftChat.deps.json
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\bin\Debug\netcoreapp2.1\DraftChat.runtimeconfig.json
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\bin\Debug\netcoreapp2.1\DraftChat.runtimeconfig.dev.json
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\bin\Debug\netcoreapp2.1\DraftChat.dll
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\bin\Debug\netcoreapp2.1\DraftChat.pdb
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\bin\Debug\netcoreapp2.1\DraftChat.Views.dll
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\bin\Debug\netcoreapp2.1\DraftChat.Views.pdb
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.csprojAssemblyReference.cache
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.csproj.CoreCompileInputs.cache
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.RazorAssemblyInfo.cache
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.RazorAssemblyInfo.cs
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.AssemblyInfoInputs.cache
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.AssemblyInfo.cs
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.TagHelpers.input.cache
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.TagHelpers.output.cache
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.RazorCoreGenerate.cache
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Shared\PlayerData.g.cshtml.cs
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.RazorTargetAssemblyInfo.cache
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.RazorTargetAssemblyInfo.cs
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.Views.pdb
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.dll
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.pdb
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.csproj.CopyComplete
