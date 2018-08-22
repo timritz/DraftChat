@@ -27,7 +27,7 @@ namespace DraftChat.Controllers
             System.Console.WriteLine(team);
             List<Player> ListPlayers = _context.Players.Where(p => p.TeamName == team).ToList();
             System.Console.WriteLine(ListPlayers);
-            return PartialView("~/Views/Ajax/PlayerData.cshtml", ListPlayers);
+            return PartialView("~/Views/Shared/PlayerData.cshtml", ListPlayers);
         }
 
         [HttpGet]
@@ -36,14 +36,14 @@ namespace DraftChat.Controllers
             System.Console.WriteLine(position);
             System.Console.WriteLine("I'm here!");
             List<Player> ListPlayers = _context.Players.Where(p => p.Position == position).ToList();
-            return PartialView("~/Views/Ajax/PlayerData.cshtml", ListPlayers);
+            return PartialView("~/Views/Shared/PlayerData.cshtml", ListPlayers);
         }
 
         [HttpGet]
         public PartialViewResult AllOfAvail()
         {
             List<Player> ListPlayers = _context.Players.Where(p => p.FantasyTeamId == -1).ToList();
-            return PartialView("~/Views/Ajax/PlayerData.cshtml", ListPlayers);
+            return PartialView("~/Views/Shared/PlayerData.cshtml", ListPlayers);
         }
     }
 }

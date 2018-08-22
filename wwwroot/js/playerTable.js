@@ -1,9 +1,7 @@
-"use strict";
-
-function BindControlEvents(){
-
-    //Query to populate table by team name
-    $(document).on("click", ".GetByTeam", function(){
+$(document).ready( function() {
+    // console.log("Here here here ")
+//     //Query to populate table by team name
+    $(document).on("change", "#GetByTeam", function(){
         var enterData = $(this).val();
         console.log("I'm here!");
         console.log(enterData);
@@ -74,9 +72,7 @@ function BindControlEvents(){
 
     });
     $('SortRank').click(function(){
-
     });
-
-}
+});
 
 
