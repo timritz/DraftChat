@@ -28,7 +28,8 @@
     <p id="demo"></p>
     <p id ="distance"></p>
 </div>
-<script src="~/lib/signalr/signalr.js"></script>
-<script src="~/js/chat.js"></script>
+<div id="tData">
+    @await Html.PartialAsync("~/Views/Shared/PlayerData.cshtml")
+</div>
 
-@Html.Partial("PlayerTablePartial")
+

@@ -30,4 +30,4 @@ C:\Users\Dan Woda\Desktop\CodingDojo\CSharp\FinalProject\DraftChat\obj\Debug\net
 C:\Users\Dan Woda\Desktop\CodingDojo\CSharp\FinalProject\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.dll
 C:\Users\Dan Woda\Desktop\CodingDojo\CSharp\FinalProject\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.pdb
 C:\Users\Dan Woda\Desktop\CodingDojo\CSharp\FinalProject\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.csproj.CopyComplete
-C:\Users\Dan Woda\Desktop\CodingDojo\CSharp\FinalProject\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Shared\PlayerTablePartial.g.cshtml.cs
+C:\Users\Dan Woda\Desktop\CodingDojo\CSharp\FinalProject\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Shared\PlayerData.g.cshtml.cs
