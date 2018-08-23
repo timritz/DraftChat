@@ -3,6 +3,15 @@
 }
 
 <div class="left-container">
+    <h1>Welcome @ViewBag.TeamName</h1>
+    @{
+        foreach(FantasyTeam team in @ViewBag.ListTeams){
+            <span>@team.TeamName</span>
+        }
+        <br>
+    }
+    <input id="TeamId" type=hidden value="@ViewBag.TeamId">
+
     <div id="tData">
     <partial name="PlayerData"/>
     </div>

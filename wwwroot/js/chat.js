@@ -82,6 +82,7 @@ $('.select-btn').click(function(){
     countDownDate = Date.now();
     var stringDate = countDownDate.toString();
     console.log(stringDate);
+    
 
     connection.invoke("UpdateTimer", stringDate).catch(function (err) {
         console.log("got to updateTimer invoke error")
@@ -91,5 +92,10 @@ $('.select-btn').click(function(){
     connection.invoke("SendPick", user, player).catch(function (err) {
         return console.error(err.toString());
     });
+
+    var FantasyTeamId = document.getElementById("TeamId").value;
+    console.log("FantasyTeamId: " + FantasyTeamId);
+
+
     event.preventDefault();
 });
