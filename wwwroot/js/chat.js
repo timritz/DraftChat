@@ -72,7 +72,8 @@ connection.on("ReceivePick", function (user, player) {
 });
 
 // document.getElementsByClassName("select").addEventListener("click", function (event) {
-$('.select-btn').click(function(){
+    // $('.select-btn').click(function(){
+$(document).on("click", ".select-btn", function(){
     console.log($(this).attr("data-player"));
     console.log($(this).attr("data-name"));
 

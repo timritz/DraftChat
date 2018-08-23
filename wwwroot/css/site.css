@@ -15,7 +15,9 @@
     font-size: 20px;
     line-height: 1.4;
 }
-
+.outer-container{
+    width: 1200px;
+}
 /* Make .svg files in the carousel display properly in older browsers */
 .carousel-inner .item img[src$=".svg"] {
     width: 100%;

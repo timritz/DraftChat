@@ -73,7 +73,7 @@ $(document).ready( function() {
             }
             $(this).data('direction', 'reverse');
         } else {
-            for (i = (sortedRows.length) ; i > 0; i--){
+            for (i = (sortedRows.length) ; i >= 0; i--){
                 $('#pTableBody').append(sortedRows[i]);
             }
             $(this).data('direction', 'forward');
