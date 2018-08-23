@@ -16,7 +16,7 @@
     line-height: 1.4;
 }
 .outer-container{
-    width: 1200px;
+    width: 1300px;
 }
 /* Make .svg files in the carousel display properly in older browsers */
 .carousel-inner .item img[src$=".svg"] {
@@ -80,7 +80,7 @@ select{
 }
 .table-scroll{
     width: 800px;
-    height: 315px;
+    height: 255px;
     overflow: auto;
     display: inline-block;
 }
@@ -114,7 +114,7 @@ select{
 }
 .message-box{
     border: 1px solid silver;
-    height: 200px;
+    height: 185px;
     margin: 5px;
     overflow: auto;
 }
@@ -169,8 +169,21 @@ select{
     height: 180px;
 }
 .chat-header{
-    margin: 5px 0px 0px 5px;
+    margin: 20px 0px 0px 5px;
 }
 .sortHead{
     cursor:pointer;
+}
+.welcome{
+    margin: 5px 0px;
+}
+.far-right-container{
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+}
+#teamList{
+    list-style-type: none;
+    margin: 0px;
+    padding: 5px;
 }

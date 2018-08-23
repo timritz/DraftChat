@@ -13,12 +13,12 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
-#line 1 "C:\Users\Tim\Documents\Coding Dojo\C#_stack\Project\NewActualProject\Views\_ViewImports.cshtml"
+#line 1 "C:\Users\Dan Woda\Desktop\CodingDojo\CSharp\FinalProject\DraftChat\Views\_ViewImports.cshtml"
 using DraftChat;
 
 #line default
 #line hidden
-#line 2 "C:\Users\Tim\Documents\Coding Dojo\C#_stack\Project\NewActualProject\Views\_ViewImports.cshtml"
+#line 2 "C:\Users\Dan Woda\Desktop\CodingDojo\CSharp\FinalProject\DraftChat\Views\_ViewImports.cshtml"
 using DraftChat.Models;
 
 #line default

@@ -38,5 +38,12 @@ namespace DraftChat.Hubs
             _context.SaveChanges();        
             await Clients.All.SendAsync("ReceiveDb", userId, playerId);
         }
+
+        public async Task NewTeam(int TeamId)
+        {
+            FantasyTeam team = _context.FantasyTeams.SingleOrDefault(t => t.FantasyTeamId == TeamId);
+            string FantasyTeamName = team.TeamName;
+            await Clients.All.SendAsync("ReceiveNewTeam", FantasyTeamName,TeamId);
+        }
     }
 }
