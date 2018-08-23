@@ -17,10 +17,47 @@ namespace DraftChat.Controllers
         {
             _context = context;
         }
+
+        
         public IActionResult Index()
         {
-            HttpContext.Session.SetInt32("CurrentUserId", 69);
+            System.Console.WriteLine("in team setup");
+            return View("TeamCreate");
+        }
+
+        [HttpPost]
+        [Route("")]
+        public IActionResult ProcessTeamSetup(FantasyTeam newTeam)
+        {
+            
+            System.Console.WriteLine("in process team setup");
+            System.Console.WriteLine("model state: " + ModelState.IsValid);
+            System.Console.WriteLine(newTeam.TeamName);
+            
+            if(ModelState.IsValid){
+
+                _context.FantasyTeams.Add(newTeam);
+                _context.SaveChanges();
+
+                System.Console.WriteLine("going to Index");
+                return RedirectToAction("DraftPage", new {TeamName = newTeam.TeamName, TeamId = newTeam.FantasyTeamId});
+            }else{
+                System.Console.WriteLine("returning to teamCreate");
+                return View("TeamCreate");
+            }
+
+            
+        }
+
+        public IActionResult DraftPage(string TeamName, int TeamId)
+        {
+            System.Console.WriteLine("TeamName in Process: " + TeamName);
+
             List<Player> ListPlayers = _context.Players.ToList();
+            List<FantasyTeam> ListTeams = _context.FantasyTeams.ToList();
+            ViewBag.ListTeams = ListTeams;
+            ViewBag.TeamName = TeamName;
+            ViewBag.TeamId = TeamId;
             return View(ListPlayers);
         }
 

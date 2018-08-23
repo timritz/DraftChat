@@ -13,6 +13,8 @@ namespace DraftChat.Models
         public FantasyTeam()
         {
             Players = new List<Player>();
+            Wallet = 0;
+            Password = "Password";
         }
     }
 }

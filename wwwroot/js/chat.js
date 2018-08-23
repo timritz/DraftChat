@@ -87,6 +87,7 @@ $(document).on("click", ".select-btn", function(){
     countDownDate = Date.now();
     var stringDate = countDownDate.toString();
     console.log(stringDate);
+    
 
     connection.invoke("UpdateDb", userId, playerId).catch(function (err) {
         console.log("got to UpdateDb invoke error");
@@ -101,5 +102,10 @@ $(document).on("click", ".select-btn", function(){
     connection.invoke("SendPick", user, player).catch(function (err) {
         return console.error(err.toString());
     });
+
+    var FantasyTeamId = document.getElementById("TeamId").value;
+    console.log("FantasyTeamId: " + FantasyTeamId);
+
+
     event.preventDefault();
 });

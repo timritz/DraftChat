@@ -10,6 +10,22 @@
         <div class="roster-scroll roster-box">
 
         </div>
+<div class="left-container">
+    <h1>Welcome @ViewBag.TeamName</h1>
+    @{
+        foreach(FantasyTeam team in @ViewBag.ListTeams){
+            <span>@team.TeamName</span>
+        }
+        <br>
+    }
+    <input id="TeamId" type=hidden value="@ViewBag.TeamId">
+
+    <div id="tData">
+    <partial name="PlayerData"/>
+    </div>
+    <p class="round-font roster-header">Your Team Roster:</p>
+    <div class="roster-scroll roster-box">
+
     </div>
     <script>
         function BindControlEvents(){

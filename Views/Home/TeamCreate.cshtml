@@ -1,0 +1,10 @@
+@model FantasyTeam
+<h1>Login and Registration</h1>
+
+<form asp-action="ProcessTeamSetup" asp-controller="Home">
+    <label asp-for="TeamName"></label>
+    <input asp-for="TeamName">
+    <span asp-validation-for="TeamName"></span><br>
+
+    <input type="submit" value="Submit">
+</form>

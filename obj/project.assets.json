@@ -13818,7 +13818,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dan Woda\\.nuget\\packages\\": {},
+    "C:\\Users\\Tim\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13834,7 +13834,7 @@
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dan Woda\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Tim\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
