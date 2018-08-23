@@ -43,13 +43,9 @@ C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftCha
 C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.TagHelpers.input.cache
 C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.TagHelpers.output.cache
 C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.RazorCoreGenerate.cache
-C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
-C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
 C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
-C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
 C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Shared\PlayerData.g.cshtml.cs
-C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
 C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
 C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
 C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
@@ -91,3 +87,5 @@ C:\Users\Tim\Documents\Coding Dojo\C#_stack\Project\NewActualProject\obj\Debug\n
 C:\Users\Tim\Documents\Coding Dojo\C#_stack\Project\NewActualProject\obj\Debug\netcoreapp2.1\DraftChat.dll
 C:\Users\Tim\Documents\Coding Dojo\C#_stack\Project\NewActualProject\obj\Debug\netcoreapp2.1\DraftChat.pdb
 C:\Users\Tim\Documents\Coding Dojo\C#_stack\Project\NewActualProject\obj\Debug\netcoreapp2.1\DraftChat.csproj.CopyComplete
+C:\Users\Tim\Documents\Coding Dojo\C#_stack\Project\NewActualProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\TeamCreate.g.cshtml.cs
+C:\Users\Tim\Documents\Coding Dojo\C#_stack\Project\NewActualProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\DraftPage.g.cshtml.cs

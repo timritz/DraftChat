@@ -72,24 +72,40 @@ connection.on("ReceivePick", function (user, player) {
 });
 
 // document.getElementsByClassName("select").addEventListener("click", function (event) {
-$('.select-btn').click(function(){
+    // $('.select-btn').click(function(){
+$(document).on("click", ".select-btn", function(){
     console.log($(this).attr("data-player"));
     console.log($(this).attr("data-name"));
+    console.log($(this).attr("data-playerId"));
+    console.log($(this).attr("data-userId"));
 
     var user = $(this).attr("data-name");
     var player = $(this).attr("data-player");
+    var userId = $(this).attr("data-userId");
+    var playerId = $(this).attr("data-playerId");
 
     countDownDate = Date.now();
     var stringDate = countDownDate.toString();
     console.log(stringDate);
+    
+
+    connection.invoke("UpdateDb", userId, playerId).catch(function (err) {
+        console.log("got to UpdateDb invoke error");
+        return console.log(err.toString());
+    });
 
     connection.invoke("UpdateTimer", stringDate).catch(function (err) {
-        console.log("got to updateTimer invoke error")
+        console.log("got to updateTimer invoke error");
         return console.log(err.toString());
     });
 
     connection.invoke("SendPick", user, player).catch(function (err) {
         return console.error(err.toString());
     });
+
+    var FantasyTeamId = document.getElementById("TeamId").value;
+    console.log("FantasyTeamId: " + FantasyTeamId);
+
+
     event.preventDefault();
 });
