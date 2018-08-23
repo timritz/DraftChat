@@ -60,3 +60,4 @@ C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftCha
 C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.dll
 C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.pdb
 C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\DraftChat.csproj.CopyComplete
+C:\Users\Dan Woda\Desktop\CodingDojo\CSharp\FinalProject\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Home\RecentPicksPartial.g.cshtml.cs

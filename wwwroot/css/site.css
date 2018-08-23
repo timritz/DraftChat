@@ -67,6 +67,7 @@ select{
     width: 80px;
     font-size: 16px;
     padding: 0px;
+    background: #D70A0B;
 }
 .select-wrapper{
     display: inline-block;
@@ -81,6 +82,13 @@ select{
     overflow: auto;
     display: inline-block;
 }
+.roster-scroll{
+    width: 800px;
+    height: 200px;
+    overflow: auto;
+    display: inline-block;
+    border: 1px solid silver;
+}
 .table-inner{
     width: 780px;
 }
@@ -90,6 +98,7 @@ select{
 #tData{
     display: inline-block;
     vertical-align: top;
+    margin-bottom: 7px;
 }
 .chat-wrapper{
     display: inline-block;
@@ -130,4 +139,33 @@ select{
 .round-font{
     font-size: 18px;
 
+}
+.picks-box{
+    border: 1px solid silver;
+    height: 180px;
+    width: 230px;
+    margin:0px;
+    overflow: auto;
+}
+#RecentPickList{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.recent-picks-container{
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 5px 0px;
+}
+.left-container{
+    display: inline-block;
+    vertical-align: top;
+}
+.roster-header{
+    margin: 0px;
+}
+.roster-box{
+    height: 180px;
+}
+.chat-header{
+    margin: 5px 0px 0px 5px;
 }
