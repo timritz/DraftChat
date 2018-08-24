@@ -73,7 +73,6 @@ C:\Users\Tim\Documents\Coding Dojo\C#_stack\Project\NewActualProject\obj\Debug\n
 C:\Users\Tim\Documents\Coding Dojo\C#_stack\Project\NewActualProject\obj\Debug\netcoreapp2.1\DraftChat.TagHelpers.input.cache
 C:\Users\Tim\Documents\Coding Dojo\C#_stack\Project\NewActualProject\obj\Debug\netcoreapp2.1\DraftChat.TagHelpers.output.cache
 C:\Users\Tim\Documents\Coding Dojo\C#_stack\Project\NewActualProject\obj\Debug\netcoreapp2.1\DraftChat.RazorCoreGenerate.cache
-C:\Users\Tim\Documents\Coding Dojo\C#_stack\Project\NewActualProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\Tim\Documents\Coding Dojo\C#_stack\Project\NewActualProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\RecentPicksPartial.g.cshtml.cs
 C:\Users\Tim\Documents\Coding Dojo\C#_stack\Project\NewActualProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\Tim\Documents\Coding Dojo\C#_stack\Project\NewActualProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\PlayerData.g.cshtml.cs

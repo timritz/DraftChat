@@ -71,6 +71,27 @@ connection.on("ReceivePick", function (user, player) {
     pickNumber += 1;
 });
 
+connection.on("ReceiveNewCurrentTeam", function (nextPickTeamId) {
+
+    var FantasyTeamId = document.getElementById("TeamId").value;
+    console.log("FantasyTeamId: " + FantasyTeamId);
+
+    console.log("got to 'are you up next?'")
+    console.log("my team " + FantasyTeamId)
+    console.log("new team " + nextPickTeamId)
+    // $('.select-btn').css('display', "none");
+    var elements = document.getElementsByClassName("select-btn");
+    if(FantasyTeamId != nextPickTeamId){
+        for(var i =0; i< elements.length; i++){
+            elements[i].style.display = "none";
+        }
+    } else {
+        for(var i =0; i< elements.length; i++){
+            elements[i].style.display = "block";
+        }
+    }
+});
+
 // document.getElementsByClassName("select").addEventListener("click", function (event) {
     // $('.select-btn').click(function(){
 $(document).on("click", ".select-btn", function(){
@@ -89,10 +110,10 @@ $(document).on("click", ".select-btn", function(){
     console.log(stringDate);
     
 
-    connection.invoke("UpdateDb", userId, playerId).catch(function (err) {
-        console.log("got to UpdateDb invoke error");
-        return console.log(err.toString());
-    });
+    // connection.invoke("UpdateDb", userId, playerId).catch(function (err) {
+    //     console.log("got to UpdateDb invoke error");
+    //     return console.log(err.toString());
+    // });
 
     connection.invoke("UpdateTimer", stringDate).catch(function (err) {
         console.log("got to updateTimer invoke error");
@@ -106,6 +127,11 @@ $(document).on("click", ".select-btn", function(){
     var FantasyTeamId = document.getElementById("TeamId").value;
     console.log("FantasyTeamId: " + FantasyTeamId);
 
+    connection.invoke("UpdateTurn", FantasyTeamId).catch(function (err) {
+        console.log("got to update turn");
+        console.log("my team " + FantasyTeamId);
+        return console.error(err.toString());
+    });
 
     event.preventDefault();
 });
