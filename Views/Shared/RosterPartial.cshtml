@@ -1,4 +1,4 @@
-<!-- model FantasyTeam -->
+
     @{
     var RosterDict = new Dictionary<string, string>()
     {
@@ -23,7 +23,7 @@
     bool TE = false;
     bool Flex = false;
     int Bench = 0;
-    <!-- foreach(var player in Model.Players){
+    foreach(var player in ViewBag.YourTeam.Players){
         if((player.Position == "RB") && (RB < 2)){ RB ++; RosterDict.Add((player.Position + RB.ToString()), player.Name); }
         else if((player.Position == "WR") && (WR < 2)) { WR ++; RosterDict.Add((player.Position + WR.ToString()), player.Name); }
         else if((player.Position == "TE") && (TE == false)) { TE = true; RosterDict.Add(player.Position, player.Name);}
@@ -38,60 +38,60 @@
             Bench ++;
             RosterDict.Add(("Bench" + Bench.ToString()), player.Name);
         }
-    } -->
+    }
 }
 <div id='rostContainer'>
     <div class='rostcol'>
         <div class='rostRow'>
-            <p><span>QB</span></p>
+            <p class="position-abrr"><span>QB</span></p>
             <p class='smallText'>@RosterDict["QB"]</p>
         </div>
         <div class='rostRow'>
-            <p><span>WR</span></p>
+            <p class="position-abrr"><span>WR</span></p>
             <p class='smallText'>@RosterDict["WR1"]</p>
         </div>
         <div class='rostRow'>
-            <p><span>RB</span></p>
+            <p class="position-abrr"><span>RB</span></p>
             <p class='smallText'>@RosterDict["RB1"]</p>
         </div>
         <div class='rostRow'>
-            <p><span>Flex</span></p>
+            <p class="position-abrr"><span>Flex</span></p>
             <p class='smallText'>@RosterDict["Flex"]</p>
         </div>
     </div>
     <div class='rostColumn'>
             <div class='rostRow'>
-                <p><span>TE</span></p>
+                <p class="position-abrr"><span>TE</span></p>
                 <p class='smallText'>@RosterDict["TE"]</p>
             </div>
             <div class='rostRow'>
-                <p><span>WR</span></p>
+                <p class="position-abrr"><span>WR</span></p>
                 <p class='smallText'>@RosterDict["WR2"]</p>
             </div>
             <div class='rostRow'>
-                <p><span>RB</span></p>
+                <p class="position-abrr"><span>RB</span></p>
                 <p class='smallText'>@RosterDict["RB2"]</p>
             </div>
             <div class='rostRow'>
-                <p><span>Bench</span></p>
+                <p class="position-abrr"><span>Bench</span></p>
                 <p class='smallText'>@RosterDict["Bench1"]</p>
             </div>
     </div>
     <div class='rostColumn'>
         <div class='rostRow'>
-            <p><span>Bench</span></p>
+            <p class="position-abrr"><span>Bench</span></p>
             <p class='smallText'>@RosterDict["Bench2"]</p>
         </div>
         <div class='rostRow'>
-            <p><span>Bench</span></p>
+            <p class="position-abrr"><span>Bench</span></p>
             <p class='smallText'>@RosterDict["Bench3"]</p>
         </div>
         <div class='rostRow'>
-            <p><span>Bench</span></p>
+            <p class="position-abrr"><span>Bench</span></p>
             <p class='smallText'>@RosterDict["Bench4"]</p>
         </div>
         <div class='rostRow'>
-            <p><span>Bench</span></p>
+            <p class="position-abrr"><span>Bench</span></p>
             <p class='smallText'>@RosterDict["Bench5"]</p>
         </div>
     </div>

@@ -45,5 +45,12 @@ namespace DraftChat.Controllers
             List<Player> ListPlayers = _context.Players.Where(p => p.FantasyTeamId == null).ToList();
             return PartialView("~/Views/Shared/PlayerData.cshtml", ListPlayers);
         }
+
+        [HttpGet]
+        public PartialViewResult RosterUpdate(int FantasyTeamId)
+        {
+            FantasyTeam YourTeam = _context.FantasyTeams.Include(t => t.Players).SingleOrDefault(p => p.FantasyTeamId == FantasyTeamId);
+            return PartialView("~/Views/Shared/PlayerData.cshtml", YourTeam);
+        }
     }
 }

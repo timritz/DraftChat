@@ -1,4 +1,7 @@
-﻿body {
+﻿*{
+    border-radius: 5px;
+}
+body {
     padding-top: 80px;
     padding-bottom: 20px;
 }
@@ -80,7 +83,7 @@ select{
 }
 .table-scroll{
     width: 800px;
-    height: 255px;
+    height: 305px;
     overflow: auto;
     display: inline-block;
 }
@@ -114,12 +117,14 @@ select{
 }
 .message-box{
     border: 1px solid silver;
-    height: 185px;
+    height: 235px;
     margin: 5px;
     overflow: auto;
+    padding: 3px;
 }
 .chat-input{
     margin: 5px;
+    padding: 3px 2px; 
     width: 230px;
 }
 .timer-wrapper{
@@ -148,6 +153,7 @@ select{
     width: 230px;
     margin:0px;
     overflow: auto;
+    padding: 3px;
 }
 #RecentPickList{
     list-style-type: none;
@@ -169,6 +175,7 @@ select{
     height: 180px;
     overflow: hidden;
     padding-top: 0px;
+    background: rgb(240, 240, 240);
 }
 .chat-header{
     margin: 20px 0px 0px 5px;
@@ -189,6 +196,20 @@ select{
     margin: 0px;
     padding: 5px;
     margin: 5px 0px 0px 5px;
+    text-align: center;
+}
+#teamList-header{
+    text-align: center;
+    margin-right:32px; 
+}
+.team-icon{
+    width: 150px;
+    color: #D70A0B;
+    background: rgb(240, 240, 240);
+    padding: 5px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
 }
 
 
@@ -201,8 +222,8 @@ select{
     flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
-    background-image: linear-gradient(to bottom right, #04356d, #03254c);
 }
+
 #rostContainer .rostCcol{
     display: flex;
     align-items: stretch;
@@ -216,13 +237,12 @@ select{
 
 #rostContainer span{
     color: #c2090a;
-    font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 22px;
-    font-weight: 900;
+    font-weight: 500;
     display: inline-block;
 }
 #rostContainer p{
-    color: white;
+    color: black;
     /* vertical-align: baseline; */
     font-size: 22px;
     font-family: 'Helvetica', 'Arial', sans-serif;
@@ -234,4 +254,11 @@ select{
     margin-top: 4px;
     margin-bottom: 4px;
     font-size: 16px;
+}
+.position-abrr{
+    width: 80px;
+}
+tr{
+    height: 40px;
+    padding: 3px;
 }

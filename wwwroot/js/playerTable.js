@@ -17,6 +17,23 @@ $(document).ready( function() {
         });
     });
 
+    //add player to roster on change of recent picks
+    $(document).on("change", "#RecentPicksList", function(){
+        console.log("RPL********");
+        var FantasyTeamId = document.getElementById("TeamId").value;
+        $.ajax({
+            type: 'GET',
+            url: '/Ajax/RosterUpdate',
+            cache: false,
+            contentType: 'application/json; charset=utf-8',
+            data: { 'FantasyTeamId': FantasyTeamId },
+        })
+        .done(function(partialViewResult) {
+            console.log("RPL**********DONE")
+            $(".roster-box").html(partialViewResult)
+        });
+    });
+
 
     // query to populate by position
     $(document).on("change", "#GetByPos", function(){

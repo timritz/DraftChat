@@ -105,14 +105,9 @@ connection.on("ReceiveNewCurrentTeam", function (nextPickTeamId) {
 // document.getElementsByClassName("select").addEventListener("click", function (event) {
     // $('.select-btn').click(function(){
 $(document).on("click", ".select-btn", function(){
-    console.log($(this).attr("data-player"));
-    console.log($(this).attr("data-name"));
-    console.log($(this).attr("data-playerId"));
-    console.log($(this).attr("data-userId"));
     
-    var user = $(this).attr("data-name");
+    var FantasyTeamId = document.getElementById("TeamId").value;
     var player = $(this).attr("data-player");
-    var userId = $(this).attr("data-userId");
     var playerId = $(this).attr("data-playerId");
     
     countDownDate = Date.now();
@@ -120,7 +115,7 @@ $(document).on("click", ".select-btn", function(){
     console.log(stringDate);
     
     
-    connection.invoke("UpdateDb", userId, playerId).catch(function (err) {
+    connection.invoke("UpdateDb", FantasyTeamId, playerId).catch(function (err) {
         console.log("got to UpdateDb invoke error");
         return console.log(err.toString());
     });
@@ -130,12 +125,9 @@ $(document).on("click", ".select-btn", function(){
         return console.log(err.toString());
     });
     
-    connection.invoke("SendPick", user, player).catch(function (err) {
+    connection.invoke("SendPick", FantasyTeamId, player).catch(function (err) {
         return console.error(err.toString());
     });
-    
-    var FantasyTeamId = document.getElementById("TeamId").value;
-    console.log("FantasyTeamId: " + FantasyTeamId);
 
     connection.invoke("UpdateTurn", FantasyTeamId).catch(function (err) {
         console.log("got to update turn");
@@ -156,4 +148,4 @@ setTimeout(function(){
             return console.error(err.toString());
         });
     });
-}, 200);
+}, 500);

@@ -21,9 +21,10 @@ namespace DraftChat.Hubs
             await Clients.All.SendAsync("ReceiveMessage", user, message);
         }
 
-        public async Task SendPick(string user, string player)
+        public async Task SendPick(int FantasyTeamId, string player)
         {
-            await Clients.All.SendAsync("ReceivePick", user, player);
+            FantasyTeam YourTeam = _context.FantasyTeams.SingleOrDefault(t => t.FantasyTeamId == FantasyTeamId);
+            await Clients.All.SendAsync("ReceivePick", YourTeam.TeamName, player);
         }
 
         public async Task UpdateTimer(string counter)
@@ -31,13 +32,13 @@ namespace DraftChat.Hubs
             await Clients.All.SendAsync("ReceiveTimer", counter);
         }
 
-        public async Task UpdateDb(int userId, int playerId)
+        public async Task UpdateDb(int FantasyTeamId, int playerId)
         {
             Player DraftedPlayer = _context.Players.SingleOrDefault(p => p.PlayerId == playerId);
-            FantasyTeam PickingTeam = _context.FantasyTeams.SingleOrDefault(f => f.FantasyTeamId == userId);
+            FantasyTeam PickingTeam = _context.FantasyTeams.SingleOrDefault(f => f.FantasyTeamId == FantasyTeamId);
             PickingTeam.Players.Add(DraftedPlayer);
             _context.SaveChanges();        
-            await Clients.All.SendAsync("ReceiveDb", userId, playerId);
+            await Clients.All.SendAsync("ReceiveDb", FantasyTeamId, playerId);
         }
 
         public async Task NewTeam(int TeamId)

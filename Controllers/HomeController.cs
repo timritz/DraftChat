@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using DraftChat.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace DraftChat.Controllers
 {
@@ -54,10 +55,13 @@ namespace DraftChat.Controllers
             System.Console.WriteLine("TeamName in Process: " + TeamName);
 
             List<Player> ListPlayers = _context.Players.ToList();
-            List<FantasyTeam> ListTeams = _context.FantasyTeams.ToList();
-            ViewBag.ListTeams = ListTeams;
+            List<FantasyTeam> ListTeams = _context.FantasyTeams.Where(t => t.FantasyTeamId != TeamId).ToList();
+            FantasyTeam YourTeam = _context.FantasyTeams.Include(p=>p.Players).SingleOrDefault(p=>p.FantasyTeamId==TeamId);
+            ViewBag.ListTeams = YourTeam;
             ViewBag.TeamName = TeamName;
             ViewBag.TeamId = TeamId;
+            ViewBag.YourTeam = YourTeam;
+            ViewBag.FantasyTeams = ListTeams;
             return View(ListPlayers);
         }
 
@@ -79,11 +83,28 @@ namespace DraftChat.Controllers
         {
             return View();
         }
+        
+        public string ClearAll()
+        {
+            List<FantasyTeam> allteams = _context.FantasyTeams.ToList();
+            List<Player> allplayers = _context.Players.ToList();
+            foreach(Player player in allplayers)
+            {
+                player.FantasyTeamId = null;
+            }
+            foreach(FantasyTeam team in allteams)
+            {
+                _context.FantasyTeams.Remove(team);
+            }
+            _context.SaveChanges();
+            return "DB Cleared";
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
     }
 }
