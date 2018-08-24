@@ -50,7 +50,7 @@ namespace DraftChat.Controllers
         public PartialViewResult RosterUpdate(int FantasyTeamId)
         {
             FantasyTeam YourTeam = _context.FantasyTeams.Include(t => t.Players).SingleOrDefault(p => p.FantasyTeamId == FantasyTeamId);
-            return PartialView("~/Views/Shared/PlayerData.cshtml", YourTeam);
+            return PartialView("~/Views/Shared/RosterPartialAjax.cshtml",YourTeam);
         }
     }
 }

@@ -1,4 +1,4 @@
-
+@model FantasyTeam
     @{
     var RosterDict = new Dictionary<string, string>()
     {
@@ -23,7 +23,7 @@
     bool TE = false;
     bool Flex = false;
     int Bench = 0;
-    foreach(var player in ViewBag.YourTeam.Players){
+    foreach(var player in @Model.Players){
         if((player.Position == "RB") && (RB < 2))
         { 
             RB ++;

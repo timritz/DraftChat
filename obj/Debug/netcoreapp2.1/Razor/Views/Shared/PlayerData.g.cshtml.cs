@@ -92,7 +92,7 @@ using DraftChat.Models;
             WriteLiteral("        <div>\r\n            <div class=\"select-wrapper\">\r\n                <label >Position:</label>\r\n                <select class=\'drop-down\' id=\'GetByPos\'>\r\n                    ");
             EndContext();
             BeginContext(199, 39, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f6cbf38237fe4799a10598821f51ee53", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7e897ab647fa422d8d6e0fb71f5f8663", async() => {
                 BeginContext(218, 11, true);
                 WriteLiteral("Quarterback");
                 EndContext();
@@ -114,7 +114,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(260, 40, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d161dc2ca3f040a9b96aab3efd558d3c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c50063514ba64b8496ed8fa15a86851b", async() => {
                 BeginContext(279, 12, true);
                 WriteLiteral("Running Back");
                 EndContext();
@@ -136,7 +136,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(322, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "819eee16c2c841b381444900e2e4da93", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f80bffd8a10043c59a82a75e8658b839", async() => {
                 BeginContext(341, 9, true);
                 WriteLiteral("Tight End");
                 EndContext();
@@ -158,7 +158,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(381, 41, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "06b6682df65c46c18ebc633ac670406a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4a3b5c0d289d4f9eab6fc2893a92acf9", async() => {
                 BeginContext(400, 13, true);
                 WriteLiteral("Wide Receiver");
                 EndContext();
@@ -180,7 +180,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                </select>\r\n            </div>\r\n            <div class=\"select-wrapper\">\r\n                <label>Team:</label>\r\n                <select class=\'drop-down\' id=\'GetByTeam\'>\r\n                    ");
             EndContext();
             BeginContext(630, 46, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a1d4259c0553497d90f693b46e7f873b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c00b8c6095343eeb51d22a0eac00cd1", async() => {
                 BeginContext(650, 17, true);
                 WriteLiteral("Arizona Cardinals");
                 EndContext();
@@ -202,7 +202,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(698, 44, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b41257d6396b4202bd9c107d004f39a0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1dca3e5d4ec741fea197dcf13e651ddb", async() => {
                 BeginContext(718, 15, true);
                 WriteLiteral("Atlanta Falcons");
                 EndContext();
@@ -224,7 +224,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(764, 45, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bc647bb2ddc34ab0a3d9b56867b79c87", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31ab87f720444f849a5627bd8cf08387", async() => {
                 BeginContext(784, 16, true);
                 WriteLiteral("Baltimore Ravens");
                 EndContext();
@@ -246,7 +246,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(831, 42, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1b49a832833748bc9c3afcc14caf2924", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e9d2fd2b257c47869356b50168152179", async() => {
                 BeginContext(851, 13, true);
                 WriteLiteral("Buffalo Bills");
                 EndContext();
@@ -268,7 +268,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(895, 46, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "382629fa92414eec8da8018d4de3b921", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "950bb2329b2c4a27a1a5c98493cbbd9e", async() => {
                 BeginContext(915, 17, true);
                 WriteLiteral("Carolina Panthers");
                 EndContext();
@@ -290,7 +290,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(963, 42, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74dcb1f6156e4efb9f968393353bab50", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2fa7ddf18bfd477c9f3ce902d8c8314c", async() => {
                 BeginContext(983, 13, true);
                 WriteLiteral("Chicago Bears");
                 EndContext();
@@ -312,7 +312,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(1027, 47, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "13ac462f76a24434abe5306ef028e9d9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "41dc29fe33c14b998ecfea76247161f7", async() => {
                 BeginContext(1047, 18, true);
                 WriteLiteral("Cincinatti Bengals");
                 EndContext();
@@ -334,7 +334,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(1096, 45, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a6b8d1d028f9444d820edebbf1554bf4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c7a9c0e1ccb4f3ab1e3321feee7f230", async() => {
                 BeginContext(1116, 16, true);
                 WriteLiteral("Cleveland Browns");
                 EndContext();
@@ -356,7 +356,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(1163, 43, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c08202c143a540e3958d3472e9f91bda", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "41f98bc70e924be6ba9dd53372e06c35", async() => {
                 BeginContext(1183, 14, true);
                 WriteLiteral("Dallas Cowboys");
                 EndContext();
@@ -378,7 +378,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(1228, 43, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7e5c5304ec55434f917a9d36a06987af", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a305c6e109e4b4582730c0cd783f0c9", async() => {
                 BeginContext(1248, 14, true);
                 WriteLiteral("Denver Broncos");
                 EndContext();
@@ -400,7 +400,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(1293, 42, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb50e3b2b0db420b8c408aa15936896f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "62010ad9ebb746f18e140295c738feec", async() => {
                 BeginContext(1313, 13, true);
                 WriteLiteral("Detroit Lions");
                 EndContext();
@@ -422,7 +422,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(1357, 45, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d3a81addd8fd4989941b6d6cad8209a8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "be0634ee4fdf485cbbd15e72c45d5f31", async() => {
                 BeginContext(1377, 16, true);
                 WriteLiteral("Greenbay Packers");
                 EndContext();
@@ -444,7 +444,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(1424, 43, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9a398a57b5d5494da800924a158d3c8e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0632c404226b422ea309fb27d282a152", async() => {
                 BeginContext(1444, 14, true);
                 WriteLiteral("Houston Texans");
                 EndContext();
@@ -466,7 +466,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(1489, 47, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0603e7e31d9843aaa61b7074b1168d21", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "66314254e17d4552827222b03778fa96", async() => {
                 BeginContext(1509, 18, true);
                 WriteLiteral("Indianapolis Colts");
                 EndContext();
@@ -488,7 +488,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(1558, 49, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6d615ad95ba14f0982d80ab559ec7aa8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e158146092e48789728b779e57c47af", async() => {
                 BeginContext(1578, 20, true);
                 WriteLiteral("Jacksonville Jaguars");
                 EndContext();
@@ -510,7 +510,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(1629, 47, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "106aa8b8b81e453383bc69fad990805e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fa151a574fa84624965a7006710c4272", async() => {
                 BeginContext(1649, 18, true);
                 WriteLiteral("Kansas City Chiefs");
                 EndContext();
@@ -532,7 +532,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(1698, 49, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c734ac9d44c04194856238d51c123559", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "df2056229e404cbe815eb0528343cf72", async() => {
                 BeginContext(1718, 20, true);
                 WriteLiteral("Los Angeles Chargers");
                 EndContext();
@@ -554,7 +554,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(1769, 45, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0cbf29c5c15c4d65bd4b2c5359f07e20", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a7ccf36bc6534f1f8bef8151b51cd936", async() => {
                 BeginContext(1789, 16, true);
                 WriteLiteral("Los Angeles Rams");
                 EndContext();
@@ -576,7 +576,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(1836, 43, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9467ae75473045d5bf2fcf25ca860803", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "44cd2d932b964eee92e05626f1d8146c", async() => {
                 BeginContext(1856, 14, true);
                 WriteLiteral("Miami Dolphins");
                 EndContext();
@@ -598,7 +598,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(1901, 47, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "df8b30032ece4a65b2cea82f3f7180e1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3c5b111b591346e0abafc227c3b49018", async() => {
                 BeginContext(1921, 18, true);
                 WriteLiteral("Minnesota Dolphins");
                 EndContext();
@@ -620,7 +620,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(1970, 47, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c323f028c1fb4e2294671b0e983acdcd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "33f452714b5940de8f7ab62ee083c02f", async() => {
                 BeginContext(1990, 18, true);
                 WriteLiteral("New Orleans Saints");
                 EndContext();
@@ -642,7 +642,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(2039, 49, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7c048108a4034a1bb4787af392a997d9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9ffbd1879a9b4238a1cddb2775143345", async() => {
                 BeginContext(2059, 20, true);
                 WriteLiteral("New England Patriots");
                 EndContext();
@@ -664,7 +664,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(2110, 44, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1b7fdac6965740cd83b6ffd7901d5a25", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0de44d533e0541fb910aa32eb10d318f", async() => {
                 BeginContext(2130, 15, true);
                 WriteLiteral("New York Giants");
                 EndContext();
@@ -686,7 +686,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(2176, 42, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "113d313c02da4f64b66dfe7b8c4c27cf", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d40766ba23774b228359e9dea623c5f3", async() => {
                 BeginContext(2196, 13, true);
                 WriteLiteral("New York Jets");
                 EndContext();
@@ -708,7 +708,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(2240, 44, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c1513f37e384996ac7991fce0c2b1bc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f235052660cb40658f628fce0d58e769", async() => {
                 BeginContext(2260, 15, true);
                 WriteLiteral("Oakland Raiders");
                 EndContext();
@@ -730,7 +730,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(2306, 48, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88a31db06e7e4938836845a212915025", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "653c5d7310e14a5d89ef8df580553b0d", async() => {
                 BeginContext(2326, 19, true);
                 WriteLiteral("Philadelphia Eagles");
                 EndContext();
@@ -752,7 +752,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(2376, 48, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9612bdae556e484ab664b11fbfd1473e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "641312a769da459890dd6a200fb566b9", async() => {
                 BeginContext(2396, 19, true);
                 WriteLiteral("Pittsburgh Steelers");
                 EndContext();
@@ -774,7 +774,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(2446, 45, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "debd3f1b59bf40299e65f0a48eea79eb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "671cedda92d3405fa803b6538c907b6f", async() => {
                 BeginContext(2466, 16, true);
                 WriteLiteral("Seattle Seahawks");
                 EndContext();
@@ -796,7 +796,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(2513, 48, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "64178ebcb8e840419187bd083ad41bb3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "40320720f9184397a8abdd9d890f9919", async() => {
                 BeginContext(2533, 19, true);
                 WriteLiteral("San Fransisco 49ers");
                 EndContext();
@@ -818,7 +818,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(2583, 49, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "49d070f6c63c4ed39275300f13c5de41", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc7b57c588584157837f8f3f9fc44940", async() => {
                 BeginContext(2603, 20, true);
                 WriteLiteral("Tampa Bay Buccaneers");
                 EndContext();
@@ -840,7 +840,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(2654, 45, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c08de24dfc154f0caa9a7207962e705d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "799acff215f7436e922ab9a432413b5d", async() => {
                 BeginContext(2674, 16, true);
                 WriteLiteral("Tennessee Titans");
                 EndContext();
@@ -862,7 +862,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(2721, 48, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "470ec23e27464ba39cc06e0853514adb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3cea61159974e22abc030f5ab1b9e29", async() => {
                 BeginContext(2741, 19, true);
                 WriteLiteral("Washington Redskins");
                 EndContext();
@@ -884,7 +884,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(2791, 43, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1ff8a0afcd2940ada90d21b1830da917", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc9b91e9438641a8a674269154a93ff4", async() => {
                 BeginContext(2811, 14, true);
                 WriteLiteral("Multiple Teams");
                 EndContext();
@@ -906,7 +906,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                </select>\r\n            </div>\r\n            <div class=\"select-wrapper\">\r\n                <label>Availability:</label>\r\n                <select class=\'drop-down\' id=\"GetByAvail\">\r\n                    ");
             EndContext();
             BeginContext(3051, 36, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "28fbf9a1c6944cfca7c58dc47611ce8e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "83bc92a684d04b6686298f11dfa0cc11", async() => {
                 BeginContext(3073, 5, true);
                 WriteLiteral("Taken");
                 EndContext();
@@ -928,7 +928,7 @@ using DraftChat.Models;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(3109, 39, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "993328b9eb0c41b6a5b2a1a23254e26d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9ac4c02645644c82a80361204fa89bf3", async() => {
                 BeginContext(3130, 9, true);
                 WriteLiteral("Available");
                 EndContext();
