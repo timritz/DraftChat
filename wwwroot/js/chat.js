@@ -85,11 +85,11 @@ connection.on("ReceiveNewCurrentTeam", function (nextPickTeamId) {
 
     var FantasyTeamId = document.getElementById("TeamId").value;
     
-    console.log("FantasyTeamId: " + FantasyTeamId);
+    console.log("RNCW FantasyTeamId: " + FantasyTeamId);
 
-    console.log("got to 'are you up next?'")
-    console.log("my team " + FantasyTeamId)
-    console.log("new team " + nextPickTeamId)
+    console.log(" RNCW got to 'are you up next?'")
+    console.log("RNCW my team " + FantasyTeamId)
+    console.log("RNCW new team " + nextPickTeamId)
     // $('.select-btn').css('display', "none");
     $('.owner').css('display', "none");
     var elements = document.getElementsByClassName("select-btn");
@@ -103,6 +103,7 @@ connection.on("ReceiveNewCurrentTeam", function (nextPickTeamId) {
     } else {
         for(var i =0; i< elements.length; i++){
             var FantasyTeamId = $(textElements[i]).attr("data-FantasyTeamId");
+            console.log(FantasyTeamId)
             if(FantasyTeamId == null){
                 console.log("Fantasy Team Id is null")
                 elements[i].style.display = "block";
