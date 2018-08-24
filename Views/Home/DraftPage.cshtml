@@ -79,12 +79,20 @@
                 <span class="round-font" id="demo"></span>
                 <span class="round-font" id="distance"></span>
             </div>
+        <div class="chat-wrapper">
+                <div class="row">
+                <p class="chat-header round-font">Chat:</p>
+                    <div class="message-box col-6">
+                        <ul id="messagesList"></ul>
+                    </div>
+                </div>
             <div class="row">
                 <div class="col-6">
                     <input class="chat-input" type="hidden" id="userInput" value="@ViewBag.TeamName"/>
                     <input class="chat-input" type="text" id="messageInput" placeholder="Comment Here"/>
                     <button class="chat-input btn" id="sendButton" value="Send Message">Send Message</button>
                 </div>
+            </div>
             </div>
             @Html.Partial("RecentPicksPartial.cshtml")
         </div>
