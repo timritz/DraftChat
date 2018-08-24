@@ -13824,11 +13824,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Dan Woda\\Desktop\\CodingDojo\\CSharp\\FinalProject\\DraftChat\\DraftChat.csproj",
+      "projectUniqueName": "C:\\Users\\Tim\\Documents\\Coding Dojo\\C#_stack\\Project\\NewActualProject\\DraftChat.csproj",
       "projectName": "DraftChat",
-      "projectPath": "c:\\Users\\Dan Woda\\Desktop\\CodingDojo\\CSharp\\FinalProject\\DraftChat\\DraftChat.csproj",
-      "packagesPath": "C:\\Users\\Dan Woda\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Dan Woda\\Desktop\\CodingDojo\\CSharp\\FinalProject\\DraftChat\\obj\\",
+      "projectPath": "C:\\Users\\Tim\\Documents\\Coding Dojo\\C#_stack\\Project\\NewActualProject\\DraftChat.csproj",
+      "packagesPath": "C:\\Users\\Tim\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tim\\Documents\\Coding Dojo\\C#_stack\\Project\\NewActualProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

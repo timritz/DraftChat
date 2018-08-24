@@ -154,31 +154,39 @@ WriteAttributeValue("", 217, ViewBag.TeamId, 217, 15, false);
               ");
             WriteLiteral(@"      $(""#tData"").html(partialViewResult)
                 });
+                $(document).on(""click"", "".GetByAvail"", function(){
+                    var enterData = $(this).val();
+                    console.log(""I'm here!"");
+                    console.log(enterData);
+                    $.ajax({
+                        type: 'GET',
+                        url: '/Ajax/AllOfAvail',
+                        cache: false,
+                        contentType: 'application/jso");
+            WriteLiteral(@"n; charset=utf-8',
+                        data: { 'avail': enterData },
+                    })
+                    .done(function(partialViewResult) {
+                        $(""#tData"").html(partialViewResult)
+                    });
+                });
+            }
+            $(document).ready(function(){
+                BindControlEvents();
             });
-        }
-        $(document).ready(function(){
-            BindControlEvents();
-        });
-        // var prm = Sys.WebForms.PageRequestManager.getInstance(); 
+            // var prm = Sys.WebForms.PageRequestManager.getInstance(); 
 
-        // prm.add_endRequest(function() { 
-            //     BindControlEvents();
-        // });
-    </script>
-    <div class=""right-container"">
-        <div class=""timer-wrapper"">
-            <span class=""round-number round-font"">Round: #</span>
-            <br>
-            <span class=""round-font"">Round Countdown: </span>
-            <span class=""round-font"" id=""demo""></span>
-            <span class=""round-font"" id=""distance""></span>
-        </div>
-        <div class=""chat-wrapper"">
-            <div class=""row"">
-                <p class=""chat-header round-font"">Chat:</p>
-                <div class=""message-box col-6"">
-                    <ul id=""messagesList""></ul>
-                </div>
+            // prm.add_endRequest(function() { 
+                //     BindControlEvents();
+            // });
+        </script>
+        <div class=""right-container"">
+            <div class=""timer-wrapper"">
+                <span class=""round-number round-font"">Round: #</span>
+                <br>
+                <span class=""round-font"">Round Countdown: </span>
+                <span class=""round-font"" id=""demo""></span>
+                <span class=""round-font"" id=""distance""></span>
             </div>
             <div class=""row"">
     ");
@@ -197,8 +205,7 @@ WriteAttributeValue("", 3491, ViewBag.TeamName, 3491, 17, false);
                     <button class=""chat-input btn"" id=""sendButton"" value=""Send Message"">Send Message</button>
                 </div>
             </div>
-        </div>
-        ");
+            ");
             EndContext();
             BeginContext(3799, 41, false);
 #line 97 "C:\Users\Dan Woda\Desktop\CodingDojo\CSharp\FinalProject\DraftChat\Views\Home\DraftPage.cshtml"

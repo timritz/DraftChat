@@ -2,6 +2,7 @@
     ViewData["Title"] = "Home Page";
 }
 <div class="outer-container">
+
     <div class="left-container">
         <h1 class="welcome">Welcome @ViewBag.TeamName!</h1>
         <input id="TeamId" type=hidden value="@ViewBag.TeamId">
@@ -29,62 +30,54 @@
                 .done(function(partialViewResult) {
                     $("#tData").html(partialViewResult)
                 });
-            });
-            $(document).on("click", ".GetByPos", function(){
-                var enterData = $(this).val();
-                console.log("I'm here!");
-                console.log(enterData);
-                $.ajax({
-                    type: 'GET',
-                    url: '/Ajax/AllOfPos',
-                    cache: false,
-                    contentType: 'application/json; charset=utf-8',
-                    data: { 'position': enterData },
-                })
-                .done(function(partialViewResult) {
-                    console.log("Here!!!")
-                    $("#tData").html(partialViewResult)
+                $(document).on("click", ".GetByPos", function(){
+                    var enterData = $(this).val();
+                    console.log("I'm here!");
+                    console.log(enterData);
+                    $.ajax({
+                        type: 'GET',
+                        url: '/Ajax/AllOfPos',
+                        cache: false,
+                        contentType: 'application/json; charset=utf-8',
+                        data: { 'position': enterData },
+                    })
+                    .done(function(partialViewResult) {
+                        console.log("Here!!!")
+                        $("#tData").html(partialViewResult)
+                    });
                 });
-            });
-            $(document).on("click", ".GetByAvail", function(){
-                var enterData = $(this).val();
-                console.log("I'm here!");
-                console.log(enterData);
-                $.ajax({
-                    type: 'GET',
-                    url: '/Ajax/AllOfAvail',
-                    cache: false,
-                    contentType: 'application/json; charset=utf-8',
-                    data: { 'avail': enterData },
-                })
-                .done(function(partialViewResult) {
-                    $("#tData").html(partialViewResult)
+                $(document).on("click", ".GetByAvail", function(){
+                    var enterData = $(this).val();
+                    console.log("I'm here!");
+                    console.log(enterData);
+                    $.ajax({
+                        type: 'GET',
+                        url: '/Ajax/AllOfAvail',
+                        cache: false,
+                        contentType: 'application/json; charset=utf-8',
+                        data: { 'avail': enterData },
+                    })
+                    .done(function(partialViewResult) {
+                        $("#tData").html(partialViewResult)
+                    });
                 });
+            }
+            $(document).ready(function(){
+                BindControlEvents();
             });
-        }
-        $(document).ready(function(){
-            BindControlEvents();
-        });
-        // var prm = Sys.WebForms.PageRequestManager.getInstance(); 
+            // var prm = Sys.WebForms.PageRequestManager.getInstance(); 
 
-        // prm.add_endRequest(function() { 
-            //     BindControlEvents();
-        // });
-    </script>
-    <div class="right-container">
-        <div class="timer-wrapper">
-            <span class="round-number round-font">Round: #</span>
-            <br>
-            <span class="round-font">Round Countdown: </span>
-            <span class="round-font" id="demo"></span>
-            <span class="round-font" id="distance"></span>
-        </div>
-        <div class="chat-wrapper">
-            <div class="row">
-                <p class="chat-header round-font">Chat:</p>
-                <div class="message-box col-6">
-                    <ul id="messagesList"></ul>
-                </div>
+            // prm.add_endRequest(function() { 
+                //     BindControlEvents();
+            // });
+        </script>
+        <div class="right-container">
+            <div class="timer-wrapper">
+                <span class="round-number round-font">Round: #</span>
+                <br>
+                <span class="round-font">Round Countdown: </span>
+                <span class="round-font" id="demo"></span>
+                <span class="round-font" id="distance"></span>
             </div>
             <div class="row">
                 <div class="col-6">
@@ -93,8 +86,8 @@
                     <button class="chat-input btn" id="sendButton" value="Send Message">Send Message</button>
                 </div>
             </div>
+            @Html.Partial("RecentPicksPartial.cshtml")
         </div>
-        @Html.Partial("RecentPicksPartial.cshtml")
     </div>
     <div class="far-right-container">
         <h4>Current Teams</h4>
