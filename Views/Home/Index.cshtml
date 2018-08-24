@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="outer-container">
+    <div class="left-container">
+        <div id="tData">
+        <partial name="PlayerData"/>
+        </div>
+        <p class="round-font roster-header">Your Team Roster:</p>
+        <div class="roster-scroll roster-box">
+            @Html.Partial("~/Views/Shared/RosterPartial.cshtml")
+        </div>
+    </div>
+    <div class="right-container">
+        <div class="timer-wrapper">
+            <span class="round-number round-font">Round: #</span>
+            <br>
+            <span class="round-font">Round Countdown: </span>
+            <span class="round-font" id="demo"></span>
+            <span class="round-font" id="distance"></span>
+        </div>
+        <div class="chat-wrapper">
+            <div class="row">
+                <p class="chat-header round-font">Chat:</p>
+                <div class="message-box col-6">
+                    <ul id="messagesList"></ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <input class="chat-input" type="text" id="userInput" placeholder="UserName"/>
+                    <input class="chat-input" type="text" id="messageInput" placeholder="Comment Here"/>
+                    <button class="chat-input btn" id="sendButton" value="Send Message">Send Message</button>
+                </div>
+            </div>
+        </div>
+        @Html.Partial("RecentPicksPartial.cshtml")
+    </div>
+</div>
+
+
+<script src="/lib/signalr/signalr.js"></script>
+<script src="~/js/chat.js"></script>
+<script src="~/js/playerTable.js"></script>

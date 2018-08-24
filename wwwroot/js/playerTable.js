@@ -37,7 +37,7 @@ $(document).ready( function() {
     });
 
 
-    $(document).on("click", "#GetByAvail", function(){
+    $(document).on("change", "#GetByAvail", function(){
         var enterData = $(this).val();
         console.log("I'm here!");
         console.log(enterData);
@@ -53,7 +53,7 @@ $(document).ready( function() {
         });
     });
 
-    $('.select').click(function(){
+    $(document).on("click", '.selectPlayer', function(){
         console.log($(this).attr("data-player"));
         console.log($(this).attr("data-name"));
     });

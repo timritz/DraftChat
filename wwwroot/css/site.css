@@ -167,6 +167,8 @@ select{
 }
 .roster-box{
     height: 180px;
+    overflow: hidden;
+    padding-top: 0px;
 }
 .chat-header{
     margin: 20px 0px 0px 5px;
@@ -186,4 +188,50 @@ select{
     list-style-type: none;
     margin: 0px;
     padding: 5px;
+    margin: 5px 0px 0px 5px;
+}
+
+
+/* CSS for Roster Box Partial*/
+
+#rostContainer {
+    display: flex;
+    flex: 1;
+    padding-top: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    background-image: linear-gradient(to bottom right, #04356d, #03254c);
+}
+#rostContainer .rostCcol{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+#rostContainer .rostRow{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#rostContainer span{
+    color: #c2090a;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    display: inline-block;
+}
+#rostContainer p{
+    color: white;
+    /* vertical-align: baseline; */
+    font-size: 22px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: 200;
+    margin-left: 20px;
+    display: inline-block;
+}
+#rostContainer .smallText{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 16px;
 }

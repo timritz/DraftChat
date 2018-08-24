@@ -89,3 +89,5 @@ C:\Users\Tim\Documents\Coding Dojo\C#_stack\Project\NewActualProject\obj\Debug\n
 C:\Users\Tim\Documents\Coding Dojo\C#_stack\Project\NewActualProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\DraftPage.g.cshtml.cs
 C:\Users\Dan Woda\Desktop\CodingDojo\CSharp\FinalProject\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Home\DraftPage.g.cshtml.cs
 C:\Users\Dan Woda\Desktop\CodingDojo\CSharp\FinalProject\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Home\TeamCreate.g.cshtml.cs
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Home\RecentPicksPartial.g.cshtml.cs
+C:\Users\riley_000\Documents\Education\Coding Dojo\Week-10 Project Week\DraftChat\obj\Debug\netcoreapp2.1\Razor\Views\Shared\RosterPartial.g.cshtml.cs
