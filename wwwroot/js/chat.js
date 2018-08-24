@@ -74,20 +74,34 @@ connection.on("ReceivePick", function (user, player) {
 connection.on("ReceiveNewCurrentTeam", function (nextPickTeamId) {
 
     var FantasyTeamId = document.getElementById("TeamId").value;
+    
     console.log("FantasyTeamId: " + FantasyTeamId);
 
     console.log("got to 'are you up next?'")
     console.log("my team " + FantasyTeamId)
     console.log("new team " + nextPickTeamId)
     // $('.select-btn').css('display', "none");
+    $('.owner').css('display', "none");
     var elements = document.getElementsByClassName("select-btn");
+    var textElements = document.getElementsByClassName("owner");
     if(FantasyTeamId != nextPickTeamId){
         for(var i =0; i< elements.length; i++){
             elements[i].style.display = "none";
+            textElements[i].style.display = "block";
+
         }
     } else {
         for(var i =0; i< elements.length; i++){
-            elements[i].style.display = "block";
+            var FantasyTeamId = $(textElements[i]).attr("data-FantasyTeamId");
+            if(FantasyTeamId == null){
+                console.log("Fantasy Team Id is null")
+                elements[i].style.display = "block";
+                textElements[i].style.display = "none";
+            } else {
+                elements[i].style.display = "none";
+                textElements[i].style.display = "block";
+            }
+            
         }
     }
 });

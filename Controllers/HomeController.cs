@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using DraftChat.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace DraftChat.Controllers
 {
@@ -53,7 +54,7 @@ namespace DraftChat.Controllers
         {
             System.Console.WriteLine("TeamName in Process: " + TeamName);
 
-            List<Player> ListPlayers = _context.Players.ToList();
+            List<Player> ListPlayers = _context.Players.Include(u=>u.FantasyTeam).ToList();
             List<FantasyTeam> ListTeams = _context.FantasyTeams.ToList();
             ViewBag.ListTeams = ListTeams;
             ViewBag.TeamName = TeamName;

@@ -77,7 +77,17 @@
                             <td class='col-1'>@player.Position</td>
                             <td class='col-1'>@player.FPointsNFL</td>
                             <td class='col-1'>@player.Rank</td>
-                            <td class='col-1 selectPlayer'><button class='select-btn btn btn-primary btn-sm' data-name="Dan" data-player='@player.Name' data-userId="1" data-playerId="@player.PlayerId">Draft</button></td>             
+                            <td class='col-1 selectPlayer'>
+                                <button class='select-btn btn btn-primary btn-sm' data-name="Dan" data-player='@player.Name' data-userId="1" data-playerId="@player.PlayerId">Draft</button>
+                                @{
+                                    if(@player.FantasyTeamId == null){
+                                        <span class="owner" data-FantastyTeamId="@player.FantasyTeamId">Available</span>
+                                    } else {
+                                        <span class="owner" data-FantastyTeamId="@player.FantasyTeamId">@player.FantasyTeam.TeamName</span>
+                                    }
+                                }
+                                
+                            </td>             
                         </tr>
                     }
                 }
