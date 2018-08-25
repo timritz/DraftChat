@@ -178,7 +178,7 @@ WriteAttributeValue("", 1325, ViewBag.TeamName, 1325, 17, false);
             WriteLiteral("        </ul>\r\n    </div>\r\n    <h3>");
             EndContext();
             BeginContext(2014, 63, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9324a1ba3c884a0bad6b38c2332e5c87", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a4b146cb13d446fb8cd194e69d1f461e", async() => {
                 BeginContext(2061, 12, true);
                 WriteLiteral("Clear All DB");
                 EndContext();
@@ -202,7 +202,7 @@ WriteAttributeValue("", 1325, ViewBag.TeamName, 1325, 17, false);
             WriteLiteral("</h3>\r\n</div>\r\n<script src=\"/lib/signalr/signalr.js\"></script>\r\n");
             EndContext();
             BeginContext(2141, 36, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "40cf7c7f98ca458cbb078dae30844217", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47c6a8795a774be381ac7be53e641457", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -220,7 +220,7 @@ WriteAttributeValue("", 1325, ViewBag.TeamName, 1325, 17, false);
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(2179, 43, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d9b2b48a59d7417993d9cf13bf573689", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "35e0a295cef84f468f025e0346241a9c", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

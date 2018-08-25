@@ -52,5 +52,13 @@ namespace DraftChat.Controllers
             FantasyTeam YourTeam = _context.FantasyTeams.Include(t => t.Players).SingleOrDefault(p => p.FantasyTeamId == FantasyTeamId);
             return PartialView("~/Views/Shared/RosterPartialAjax.cshtml",YourTeam);
         }
+
+        [HttpGet]
+        public PartialViewResult UpdateTable()
+        {
+            List<Player> ListPlayers = _context.Players.Include(p=> p.FantasyTeam).ToList();
+            System.Console.WriteLine("Updatetable!!!!!!!!!!!!!");
+            return PartialView("~/Views/Shared/PlayerData.cshtml", ListPlayers);
+        }
     }
 }

@@ -81,41 +81,44 @@ connection.on("ReceivePick", function (user, player) {
     pickNumber += 1;
 });
 
+
 connection.on("ReceiveNewCurrentTeam", function (nextPickTeamId) {
 
-    var FantasyTeamId = document.getElementById("TeamId").value;
+        var FantasyTeamId = document.getElementById("TeamId").value;
+        
+        console.log("RNCW FantasyTeamId: " + FantasyTeamId);
     
-    console.log("RNCW FantasyTeamId: " + FantasyTeamId);
-
-    console.log(" RNCW got to 'are you up next?'")
-    console.log("RNCW my team " + FantasyTeamId)
-    console.log("RNCW new team " + nextPickTeamId)
-    // $('.select-btn').css('display', "none");
-    $('.owner').css('display', "none");
-    var elements = document.getElementsByClassName("select-btn");
-    var textElements = document.getElementsByClassName("owner");
-    if(FantasyTeamId != nextPickTeamId){
-        for(var i =0; i< elements.length; i++){
-            elements[i].style.display = "none";
-            textElements[i].style.display = "block";
-
-        }
-    } else {
-        for(var i =0; i< elements.length; i++){
-            var FantasyTeamId = $(textElements[i]).attr("data-FantasyTeamId");
-            console.log(FantasyTeamId)
-            if(FantasyTeamId == null){
-                console.log("Fantasy Team Id is null")
-                elements[i].style.display = "block";
-                textElements[i].style.display = "none";
-            } else {
+        console.log(" RNCW got to 'are you up next?'")
+        console.log("RNCW my team " + FantasyTeamId)
+        console.log("RNCW new team " + nextPickTeamId)
+        // $('.select-btn').css('display', "none");
+        $('.owner').css('display', "none");
+        var elements = document.getElementsByClassName("select-btn");
+        var textElements = document.getElementsByClassName("owner");
+        if(FantasyTeamId != nextPickTeamId){
+            for(var i =0; i< elements.length; i++){
                 elements[i].style.display = "none";
                 textElements[i].style.display = "block";
+    
             }
-            
+        } else {
+            for(var i =0; i< elements.length; i++){
+                var FantasyTeamId = $(textElements[i]).attr("data-FantasyTeamId");
+                console.log(FantasyTeamId)
+                if(FantasyTeamId == null){
+                    console.log("Fantasy Team Id is null")
+                    elements[i].style.display = "block";
+                    textElements[i].style.display = "none";
+                } else {
+                    elements[i].style.display = "none";
+                    textElements[i].style.display = "block";
+                }
+                
+            }
         }
-    }
+
 });
+
 
 // document.getElementsByClassName("select").addEventListener("click", function (event) {
     // $('.select-btn').click(function(){
@@ -135,6 +138,19 @@ $(document).on("click", ".select-btn", function(){
         return console.log(err.toString());
     });
     
+  
+    // $.ajax({
+    //     type: 'GET',
+    //     url: '/Ajax/UpdateTable',
+    //     cache: false,
+    //     contentType: 'application/json; charset=utf-8'
+    // })
+    // .done(function(partialViewResult) {
+    //     $("#tData").html(partialViewResult)
+    // });
+
+
+
     connection.invoke("UpdateTimer", stringDate).catch(function (err) {
         console.log("got to updateTimer invoke error");
         return console.log(err.toString());
