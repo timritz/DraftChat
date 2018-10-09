@@ -1,4 +1,5 @@
 # DraftChat
 Draft chat is a fantasy football mock draft web application.
 
-It was written in C# and the .NET core framework. Check out the video demo here: https://youtu.be/hMipTzy0w9Y
+It was written in C# and the .NET core framework.
+The website's primary functionality revolves around Web Sockets. 
